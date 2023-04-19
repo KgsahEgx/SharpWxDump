@@ -59,8 +59,7 @@ jobs:
     - name: Build
       run: dotnet build -p:Configuration=Release -p:Platform=x86 -p:DebugSymbols=false -p:DebugType=None
 
-    - name: Release 
-      uses: softprops/action-gh-release@v1
-      if: startsWith(github.ref, 'refs/tags/')
-      with:
-        files: ./bin/x86/Release/SharpWxDump.exe
+    - name: Artifact 
+      uses: actions/upload-artifact@v3
+        with:
+          path: D:\a\SharpWxDump\SharpWxDump\bin\x86\Release\SharpWxDump.exe # or path/to/artifact
