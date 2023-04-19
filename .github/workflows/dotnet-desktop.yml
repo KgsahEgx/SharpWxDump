@@ -61,5 +61,5 @@ jobs:
 
     - name: Artifact 
       uses: actions/upload-artifact@v3
-        with:
-          path: D:\a\SharpWxDump\SharpWxDump\bin\x86\Release\SharpWxDump.exe # or path/to/artifact
+      with:
+        path: D:\a\SharpWxDump\SharpWxDump\bin\x86\Release\SharpWxDump.exe # or path/to/artifact
